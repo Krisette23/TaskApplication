@@ -1,10 +1,10 @@
-package inputOutput;
-import Models.Assignment;
-import java.util.ArrayList;
+package com.example.myapplication.inputOutput.inputOutput;
+import com.example.myapplication.Models.Assignment;
+
 import java.util.List;
 
-import Models.Task;
-import Models.User;
+import com.example.myapplication.Models.Task;
+import com.example.myapplication.Models.User;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
