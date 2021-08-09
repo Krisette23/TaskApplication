@@ -1,14 +1,16 @@
 package Models;
 
+import java.util.Date;
+
 public class Task {
 
     private final int TaskId;
     private final String Title;
     private final String Requirements;
-    private final DateTime BeginDateTime;
-    private final DateTime DeadlineDateTime;
+    private final Date BeginDateTime;
+    private final Date DeadlineDateTime;
 
-    public Task (int TaskId, String Title, String Requirements, DateTime BeginDateTime, DateTime DeadlineDateTime){
+    public Task (int TaskId, String Title, String Requirements, Date BeginDateTime, Date DeadlineDateTime){
         this.TaskId = TaskId;
         this.Title= Title;
         this.Requirements = Requirements;
@@ -16,7 +18,7 @@ public class Task {
         this.DeadlineDateTime = DeadlineDateTime;
     }
 
-    piblic int getTaskId(){
+    public int getTaskId(){
         return TaskId;
     }
 
@@ -28,11 +30,11 @@ public class Task {
         return Requirements;
     }
 
-    public DateTime getBeginDateTime() {
+    public Date getBeginDateTime() {
         return BeginDateTime;
     }
 
-    public DateTime getDeadlineDateTime() {
+    public Date getDeadlineDateTime() {
         return DeadlineDateTime;
     }
 }

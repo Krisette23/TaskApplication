@@ -1,13 +1,11 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.ui.AppBarConfiguration;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import android.os.Bundle;
-
-import java.util.ArrayList;
-
-import inputOutput.ApiAdapter;
-import inputOutput.ApiAdapterI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,8 +13,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       Call<List<Assignments>> call = ApiAdapter.getApiService().getAssignments();
-       call.enqueue();
+      /**Call<List<Assignments>> call = ApiAdapter.getApiService().getAssignments();
+       call.enqueue();**/
+        /**BottomNavigationView navView = findViewById(R.id.nav_view);**/
+        /**AppBarConfiguration  appBarConfiguration = new AppBarConfiguration.Builder();**/
+
+
+
 
     }
 }

@@ -3,10 +3,11 @@ package Models;
 public class Assignment {
     public final int TaskId;
     public final int UserId;
-
-    public Assignment (int TaskId, int UserId){
-        this.TaskId = Taskid;
-        this.UserId = Userid;
+    public final Task task;
+    public Assignment(int TaskId, int UserId, Task task){
+        this.task = task;
+        this.TaskId = TaskId;
+        this.UserId = UserId;
     }
 
     public int getTaskId() {
