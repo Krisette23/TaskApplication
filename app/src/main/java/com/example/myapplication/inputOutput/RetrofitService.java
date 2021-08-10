@@ -1,6 +1,6 @@
 package com.example.myapplication.inputOutput;
 
-import com.example.myapplication.inputOutput.inputOutput.ApiAdapterI;
+import com.example.myapplication.inputOutput.ApiAdapterI;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
