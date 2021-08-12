@@ -1,14 +1,11 @@
 package com.example.myapplication.Models;
 
 public class Assignment {
-    public final int TaskId;
-    public final int UserId;
-    public final Task task;
-    public Assignment(int TaskId, int UserId, Task task){
-        this.task = task;
-        this.TaskId = TaskId;
-        this.UserId = UserId;
-    }
+    private  int TaskId;
+    private int UserId;
+    private User user;
+    private  Task task;
+
 
     public int getTaskId() {
         return TaskId;
@@ -16,5 +13,12 @@ public class Assignment {
 
     public int getUserId() {
         return UserId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+    public Task getTask() {
+        return task;
     }
 }

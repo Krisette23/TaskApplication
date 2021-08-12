@@ -11,7 +11,7 @@ public class RetrofitService {
 
     public static ApiAdapterI Create (){
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl( " http://155.4.128.206")
+                .baseUrl( "http://155.4.128.206")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
             return retrofit.create(ApiAdapterI.class);

@@ -11,7 +11,7 @@ import retrofit2.http.Path;
 
 public interface ApiAdapterI {
 
-    @GET("assignments")
+    @GET("api/assignments")
     Call<List<Assignment>> getAssignments();
 
     @GET ("assignments/{id}/tasks")

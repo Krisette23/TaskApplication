@@ -5,10 +5,10 @@ import java.util.List;
 import com.example.myapplication.Models.Task;
 /*import com.example.myapplication.Models.User;*/
 
-import com.example.myapplication.inputOutput.inputOutput.ApiAdapterI;
 import com.example.myapplication.inputOutput.RetrofitService;
 import retrofit2.Call;
 import retrofit2.Callback;
+import com.example.myapplication.inputOutput.ApiAdapterI;
 
 /* Bind RESTFUL - Retrofit */
 

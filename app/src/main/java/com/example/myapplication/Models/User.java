@@ -2,23 +2,20 @@ package com.example.myapplication.Models;
 
 public class User {
 
-    private final int UserId;
-    private final String FirstName;
-    private final String LastName;
+    private int UserId;
+    private  String FirstName;
+    private String LastName;
 
-    public  User (int UserId, String FirstName, String LastName){
-        this.UserId= UserId;
-        this.FirstName = FirstName;
-        this.LastName = LastName;
-
-    }
-    public int getId(){
+    public int getUserId() {
         return UserId;
     }
-    public String getName(){
+
+    public String getFirstName() {
         return FirstName;
     }
-    public String getLastName(){
+
+    public String getLastName() {
         return LastName;
     }
+
 }

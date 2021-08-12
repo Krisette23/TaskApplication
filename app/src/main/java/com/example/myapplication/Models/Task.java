@@ -1,25 +1,28 @@
 package com.example.myapplication.Models;
 
 import java.util.Date;
+import java.util.List;
 
 public class Task {
 
-    private final int TaskId;
-    private final String Title;
-    private final String Requirements;
-    private final Date BeginDateTime;
-    private final Date DeadlineDateTime;
+    private  int TaskId;
+    private  String BeginDateTime;
+    private  String DeadlineDateTime;
+    private  String Title;
+    private  String Requirements;
+    private List<Assignment> Assignment;
 
-    public Task (int TaskId, String Title, String Requirements, Date BeginDateTime, Date DeadlineDateTime){
-        this.TaskId = TaskId;
-        this.Title= Title;
-        this.Requirements = Requirements;
-        this.BeginDateTime = BeginDateTime;
-        this.DeadlineDateTime = DeadlineDateTime;
-    }
+
 
     public int getTaskId(){
         return TaskId;
+    }
+    public String getBeginDateTime() {
+        return BeginDateTime;
+    }
+
+    public String getDeadlineDateTime() {
+        return DeadlineDateTime;
     }
 
     public String getTitle() {
@@ -30,11 +33,7 @@ public class Task {
         return Requirements;
     }
 
-    public Date getBeginDateTime() {
-        return BeginDateTime;
-    }
-
-    public Date getDeadlineDateTime() {
-        return DeadlineDateTime;
+    public List<Assignment> getAssignment() {
+        return Assignment;
     }
 }
